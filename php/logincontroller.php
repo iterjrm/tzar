@@ -20,6 +20,10 @@
 				echo "Error Log In";	
 			}
 		}
+		else
+		{
+			echo "Something Went Wrong!!!";	
+		}
 	}
 	else
 	{
