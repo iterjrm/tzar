@@ -13,6 +13,7 @@
       <div class="circle" style="background: url(&quot;http://www.tzaraerospace.com/wp-content/uploads/2017/07/tzar-square-edit.png&quot;)"></div>
       <div class="registration">
         <h1>LOGIN</h1>
+        
         <form method="post" action="../php/logincontroller.php">
           <input type="text" name="email" placeholder="Email Id" required="required"/>
           <input type="password" name="password" placeholder="Password" required="required"/>
