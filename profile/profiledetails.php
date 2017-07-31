@@ -26,7 +26,7 @@ include("header.php");
                   <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
                               <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
-
+                              <br>
                               <input type="text" name="fname" id="fname" class="form-control" required="true" placeholder="First Name">      
                       </div>
 
