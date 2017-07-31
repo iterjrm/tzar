@@ -432,12 +432,13 @@
                       
 
                 <h2>Profile Details</h2>
-                  <div class="row">3
-                  <div class="ln_solid"></div>
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+                  <div class="row">
+                  <form role="form">
 
-                          <input type="text" name="fname" id="fname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="First Name">      
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                        <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+
+                        <input type="text" name="fname" id="fname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="First Name">      
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
