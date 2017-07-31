@@ -58,6 +58,7 @@ body .mask .modal .circle {
   border-radius: 10%;
   position: relative;
   left: 50%;
+  margin:5px;
   overflow: hidden;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 8px #0a0a0a,0 0 0 1px #0a0a0a;
