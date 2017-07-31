@@ -61,7 +61,7 @@ body .mask .modal .circle {
   overflow: hidden;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 8px #0a0a0a,0 0 0 1px #0a0a0a;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center ;
   background-size: 100% 100% cover;
 
