@@ -124,9 +124,9 @@ body .mask .modal .registration input:focus {
 body .mask .modal .registration button {
   background: transparent;
   text-align: center;
-  border: solid 2px #fff;
+  border: solid 1px #fff;
   margin: 25px 15px 0;
-  width: 275px;
+  width: 200px;
   color: #fff;
   line-height: 25px;
   border-radius: 20px 20px 20px 20px;
