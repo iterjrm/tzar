@@ -8,13 +8,12 @@
 		$query=mysqli_query($conn,"SELECT email,password FROM register_user WHERE email='$email' AND password='$password' ");
 
 		if(mysqli_num_rows($query)==1)
-			{echo "Success Log In";}
+			{echo "You have successfuly logged in.";}
 		else
-			{echo "Error Log In";}
+			{echo "Sorry, wrong credentials";}
 	}
 	else
 	{
 		header("location:login.php");
 	}
-
 ?>
