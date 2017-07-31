@@ -75,7 +75,7 @@ body .mask .modal .registration h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   text-align: center;
-  font-size:.5em;
+  font-size:1em;
 }
 body .mask .modal .registration input {
   width: 260px;
