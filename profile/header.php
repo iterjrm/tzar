@@ -2,9 +2,7 @@
 <head>
   <meta charset="utf-8"><!DOCTYPE html>
   <style>
-  body {
-  height: 100vh;
-   }
+  body { overflow:hidden; }
   </style>
 <html>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
