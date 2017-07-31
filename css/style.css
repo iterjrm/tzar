@@ -45,7 +45,7 @@ body .mask .modal {
   height: 320px;
   background: rgba(3, 111, 212, 0.5);
   border-radius: 5px;
-  box-shadow: 0 0 10px #000000, 0 0 0 1px rgba(47, 47, 47, 0.5) inset;
+  box-shadow: 0 0 10px #036fd4, 0 0 0 1px rgba(47, 47, 47, 0.5) inset;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -117,7 +117,7 @@ body .vertical .horizontal {
   width: 100%;
   height: 150px;
   position: relative;
-  box-shadow: -1px 1px 0 1px #000000 inset, 0 0 50px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: -1px 1px 0 1px #036fd4 inset, 0 0 50px rgba(0, 0, 0, 0.5) inset;
   overflow: hidden;
   text-align: center;
   background-repeat: no-repeat;
