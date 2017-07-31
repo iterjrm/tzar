@@ -5,11 +5,9 @@
 		
 		$email=trim(mysqli_real_escape_string($conn,$_POST['email']));
 		$password=trim(mysqli_real_escape_string($conn,md5($_POST['password'])));
-		echo "$email<br>$password";
-		exit();
 		$query=mysqli_query($conn,"SELECT email,password FROM register_user WHERE email='$email' AND password='$password' ");
 
-		if(mysqli_num_rows($conn)==1)
+		if(mysqli_num_rows($result)==1)
 			{echo "Success Log In";}
 		else
 			{echo "Error Log In";}
