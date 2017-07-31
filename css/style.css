@@ -66,7 +66,7 @@ body .mask .modal .circle {
   background-size: 100% 100% cover;
 
 }
-body .mask .modal .login h1 {
+body .mask .modal .registration h1 {
   margin: 0;
   padding: 0;
   margin-top: -30px;
@@ -76,7 +76,7 @@ body .mask .modal .login h1 {
   letter-spacing: 1px;
   text-align: center;
 }
-body .mask .modal .login input {
+body .mask .modal .registration input {
   width: 260px;
   margin-left: 10px;
   margin-top: 15px;
@@ -96,10 +96,10 @@ body .mask .modal .login input {
   -ms-transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
 }
-body .mask .modal .login input:focus {
+body .mask .modal .registration input:focus {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
 }
-body .mask .modal .login button {
+body .mask .modal .registration button {
   background: transparent;
   text-align: center;
   border: solid 2px #fff;
