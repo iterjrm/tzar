@@ -1,6 +1,11 @@
 
 <head>
   <meta charset="utf-8"><!DOCTYPE html>
+  <style>
+  html {
+    overflow-y: hidden
+       }
+  </style>
 <html>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
@@ -519,4 +524,3 @@
         <li class="active">Dashboard</li>
       </ol>
     </section>
-    
