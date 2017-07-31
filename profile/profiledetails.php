@@ -433,7 +433,7 @@
 
                 <h2>Profile Details</h2>
                   <div class="row">
-                    <div class="ln_solid"></div>
+                    
                         
 
                       
