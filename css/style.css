@@ -99,20 +99,23 @@ body .mask .modal .registration input {
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
+    opacity:  0.6;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #fff;
-   opacity:  1;
+   opacity:  0.6;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #fff;
-   opacity:  1;
+   opacity:  0.6;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #fff;
+   opacity:  0.6;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    #fff;
+   opacity:  0.6;
 }
 body .mask .modal .registration input:focus {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
