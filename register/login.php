@@ -16,6 +16,7 @@
         <form method="post" action="../controller/registercontroller.php">
           <input type="text" name="email" placeholder="Email Id" required="required"/>
           <input type="password" name="password" placeholder="Password" required="required"/>
+          <br>
           <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
         </form>
       </div>
