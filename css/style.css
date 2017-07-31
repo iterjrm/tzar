@@ -62,7 +62,7 @@ body .mask .modal .circle {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 8px #0a0a0a,0 0 0 1px #0a0a0a;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: 40px 40px;
 }
 body .mask .modal .login h1 {
