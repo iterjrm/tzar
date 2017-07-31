@@ -73,7 +73,8 @@ body .mask .modal .registration h1 {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 30px;
   text-align: center;
 }
 body .mask .modal .registration input {
