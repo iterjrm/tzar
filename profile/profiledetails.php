@@ -434,7 +434,7 @@
 
                 <!-- Post -->
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span style="margin-left:0; class="label label-info">First Name</span></label>
+                              <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span style="margin-left: -5px; class="label label-info">First Name</span></label>
 
                               <input type="text" name="fname" id="fname" class="form-control" required="true" placeholder="First Name">      
                       </div>
