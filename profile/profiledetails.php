@@ -433,34 +433,18 @@
 
                 <h2>Profile Details</h2>
                   <div class="row">
-                  <form role="form">
+                
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                        <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+                              <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
 
-                        <input type="text" name="fname" id="fname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="First Name">      
+                              <input type="text" name="fname" id="fname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="First Name">      
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
+                              <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
 
-                          <input type="text" name="lname" id="lname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Last Name">      
-                      </div>
-                  </div>
-
-                  <br>
-
-                  <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="faname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
-
-                          <input type="text" name="faname" id="faname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Father's Name">      
-                      </div>
-
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Mother's Name</span></label>
-
-                          <input type="text" name="mname" id="mname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Mother's Name">      
+                              <input type="text" name="lname" id="lname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Last Name">      
                       </div>
                   </div>
 
@@ -468,15 +452,15 @@
 
                   <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="phone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
+                              <label for="faname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
 
-                          <input type="text" name="phone" id="phone" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Contact No.">      
+                              <input type="text" name="faname" id="faname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Father's Name">      
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="aphone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
+                              <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Mother's Name</span></label>
 
-                          <input type="text" name="aphone" id="aphone" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Alternate Contact No.">      
+                              <input type="text" name="mname" id="mname" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Mother's Name">      
                       </div>
                   </div>
 
@@ -484,15 +468,31 @@
 
                   <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="eid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+                              <label for="phone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
 
-                          <input type="text" name="eid" id="eid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Email Id">      
+                              <input type="text" name="phone" id="phone" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Contact No.">      
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                         <label for="dob" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Date Of Birth</span></label>
+                              <label for="aphone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
 
-                          <input type="text" name="dob" id="dob" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Date Of Birth">      
+                              <input type="text" name="aphone" id="aphone" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Alternate Contact No.">      
+                      </div>
+                  </div>
+
+                  <br>
+
+                  <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="eid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+
+                              <input type="text" name="eid" id="eid" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Email Id">      
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="dob" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Date Of Birth</span></label>
+
+                              <input type="text" name="dob" id="dob" class="form-control has-feedback-right has-feedback-left" required="true" placeholder="Date Of Birth">      
                       </div>
                   </div>
 
@@ -500,8 +500,8 @@
 
                   <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                           <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Address</span></label>
-                          <textarea class="pa form-control" placeholder="Address" rows="5" name="address"></textarea>
+                              <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Address</span></label>
+                              <textarea class="pa form-control" placeholder="Address" rows="5" name="address"></textarea>
                         </div>
                   </div>
 
