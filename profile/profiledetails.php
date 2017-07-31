@@ -432,7 +432,8 @@
                       
 
                 <h2>Profile Details</h2>
-                  <div class="row">
+                  <div class="row">3
+                  <div class="ln_solid"></div>
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
                          <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
 
