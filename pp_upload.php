@@ -1,5 +1,4 @@
 <?php
-$x="email";
 ?>
 <!DOCTYPE html>
 <html>
