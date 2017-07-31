@@ -423,16 +423,12 @@
           </div>
         </div>
         <div class="box-body">
-          Start creating your amazing application!
           <div class="row" id="body2">
             <div class="col-md-12 col-sm-12 col-xs-12">
 
                       
                 <h2>Profile Details</h2>
                   <div class="row">
-               <!-- /.post -->
-
-                <!-- Post -->
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
                               <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
 
