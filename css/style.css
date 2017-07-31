@@ -95,6 +95,18 @@ body .mask .modal .registration input {
   -o-transition: box-shadow 0.5s ease;
   -ms-transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
 }
 body .mask .modal .registration input:focus {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
