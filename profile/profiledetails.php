@@ -25,13 +25,13 @@ include("header.php");
                 <h2>Profile Details</h2>
                   <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
+                              <label for="fname" class="col-md-6 col-sm-6 col-xs-12"><span class="label label-info">First Name</span></label>
                               <br>
                               <input type="text" name="fname" id="fname" class="form-control" required="true" placeholder="First Name">      
                       </div>
 
                       <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
+                              <label for="lname" class="col-md-6 col-sm-6 col-xs-12"><span class="label label-info">Last Name</span></label>
 
                               <input type="text" name="lname" id="lname" class="form-control" required="true" placeholder="Last Name">      
                       </div>
