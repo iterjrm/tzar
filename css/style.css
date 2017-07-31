@@ -53,8 +53,8 @@ body .mask .modal {
 }
 body .mask .modal .circle {
   background: #0d0d0d;
-  width: 120px;
-  height: 120px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: relative;
   left: 50%;
