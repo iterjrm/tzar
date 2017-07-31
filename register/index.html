@@ -4,30 +4,25 @@
   <meta charset="UTF-8">
   <title>TRAINING REGISTRATION | TZARAEROSPACE </title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  
   <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<div class="mask">
-  <div class="modal">
-    <div class="circle" style="background: url(&quot;http://www.tzaraerospace.com/wp-content/uploads/2017/07/tzar-square-edit.png&quot;)"></div>
-    <div class="registration">
-      <h1>REGISTRATION</h1>
-      <form method="post">
-        <input type="text" name="name" placeholder="Name" required="required"/>
-        <input type="text" name="email" placeholder="Email Id" required="required"/>
-        <input type="password" name="password" placeholder="Password" required="required"/>
-        <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
-      </form>
+  <div class="mask">
+    <div class="modal">
+      <div class="circle" style="background: url(&quot;http://www.tzaraerospace.com/wp-content/uploads/2017/07/tzar-square-edit.png&quot;)"></div>
+      <div class="registration">
+        <h1>REGISTRATION</h1>
+        <form method="post" action="../controller/registercontroller.php">
+          <input type="text" name="name" placeholder="Name" required="required"/>
+          <input type="text" name="email" placeholder="Email Id" required="required"/>
+          <input type="password" name="password" placeholder="Password" required="required"/>
+          <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+
 <div class="vertical vertical0">
   <div class="horizontal horizontal000" style="background: url(&quot;http://www.tzaraerospace.com/wp-content/uploads/2017/07/1-1.jpg&quot;)"></div>
   <div class="horizontal horizontal001" style="background: url(&quot;http://www.tzaraerospace.com/wp-content/uploads/2017/07/2-e1501484212112.jpg&quot;)"></div>
@@ -591,8 +586,7 @@
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js'></script>
-
-    <script src="js/index.js"></script>
-
+<script src="js/index.js"></script>
+<script type="text/javascript" src="register.js"></script>
 </body>
 </html>
