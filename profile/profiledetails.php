@@ -424,100 +424,88 @@
         </div>
         <div class="box-body">
           Start creating your amazing application!
-          <h2>Franchise Registration</h2>
-                    <div class="row">
-                       <div class="ln_solid"></div>
+          <div class="row" id="body2">
+            <div class="col-md-12 col-sm-12 col-xs-12">
 
+                      
+                <h2>Profile Details</h2>
+                  <div class="row">
+               <!-- /.post -->
 
-          <div class="col-md-4 col-sm-4 col-xs-12"  >
-                         <label for="lfname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal First Name</span></label>
+                <!-- Post -->
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="fname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">First Name</span></label>
 
-                          <input type="text" name="lfname" id="lfname" class="form-control" placeholder="Legal First Name">     
-                         </div>
+                              <input type="text" name="fname" id="fname" class="form-control" required="true" placeholder="First Name">      
+                      </div>
 
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="lname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Last Name</span></label>
 
+                              <input type="text" name="lname" id="lname" class="form-control" required="true" placeholder="Last Name">      
+                      </div>
+                  </div>
 
-                        <div class="col-md-4 col-sm-4 col-xs-12" >
-                         <label for="lmname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal Middle Name</span></label>
+                  <br>
 
-                          <input type="text" name="lmname" id="lmname" class="form-control" placeholder="Legal Middle Name">
+                  <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="faname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
+
+                              <input type="text" name="faname" id="faname" class="form-control" required="true" placeholder="Father's Name">      
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Mother's Name</span></label>
+
+                              <input type="text" name="mname" id="mname" class="form-control" required="true" placeholder="Mother's Name">      
+                      </div>
+                  </div>
+
+                  <br>
+
+                  <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="phone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
+
+                              <input type="text" name="phone" id="phone" class="form-control" required="true" placeholder="Contact No.">      
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="aphone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
+
+                              <input type="text" name="aphone" id="aphone" class="form-control" required="true" placeholder="Alternate Contact No.">      
+                      </div>
+                  </div>
+
+                  <br>
+
+                  <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="eid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+
+                              <input type="text" name="eid" id="eid" class="form-control" required="true" placeholder="Email Id">      
+                      </div>
+
+                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
+                              <label for="dob" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Date Of Birth</span></label>
+
+                              <input type="text" name="dob" id="dob" class="form-control" required="true" placeholder="Date Of Birth">      
+                      </div>
+                  </div>
+
+                  <br>
+
+                  <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                              <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Address</span></label>
+                              <textarea class="pa form-control" placeholder="Address" rows="5" name="address"></textarea>
                         </div>
+                  </div>
 
-
-                      
-                       <div class="col-md-4 col-sm-4 col-xs-12"  >
-                         <label for="llname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Legal Last Name</span></label>
-              <input type="text" name="llname" id="llname" class="form-control"  placeholder="Legal Last Name"> 
-                      </div>   
-
-             </div>
-
-             <br>
-
-             <div class="row">
-
-         <div class="col-md-4 col-sm-4 col-xs-12"  >
-                        <label for="ofname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner First Name</span></label>
-
-                      <input type="text" name="ofname" id="ofname" class="form-control" placeholder="Owner First Name">     
-             </div>
-
-
-
-                  <div class="col-md-4 col-sm-4 col-xs-12" >
-                           <label for="omname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner Middle Name</span></label>
-
-                           <input type="text" name="omname" id="omname" class="form-control" placeholder="Owner Middle Name">
+              </form>
             </div>
-
-
-                      
-                    <div class="col-md-4 col-sm-4 col-xs-12"  >
-                              <label for="olname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Owner Last Name</span></label>
-              <input type="text" name="olname" id="olname" class="form-control"  placeholder="Owner Last Name"> 
-                      </div>   
-
-             </div>
-
-             <br>
-
-             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12" >
-                               <label for="ownerid" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Owner Id</span></label>
-
-                                <input type="number" name="ownerid" id="ownerid" class="form-control" placeholder="Owner Id">     
-                        
-          </div>      
-                  <div class="col-md-6 col-sm-6 col-xs-12" >
-                               <label for="panno" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Pan No.</span></label>
-
-                                <input type="number" name="panno" id="panno" class="form-control" placeholder="Pan No.">      
-                        
-                  </div>
-
-
-
-             </div>
-
-      <br>
-
-          <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12" >
-                               <label for="email" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Email Id</span></label>
-
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email Id">      
-                        
-          </div>      
-                  <div class="col-md-6 col-sm-6 col-xs-12" >
-                               <label for="contact" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Contact No.</span></label>
-
-                                <input type="number" name="contact" id="contact" class="form-control" placeholder="Contact No.">      
-                        
-                  </div>
-
-
-
-             </div>
+          </div>
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
