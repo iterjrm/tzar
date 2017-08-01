@@ -3,8 +3,8 @@
 
 include("header.php");
 
-$editid=1;
-//$_SESSION['u_id'];
+$editid=$_SESSION['u_id'];
+//1;
 
 
 
