@@ -1,6 +1,6 @@
 <?php
 
-	session_start();
+	
 	if(isset($_POST['email']) && isset($_POST['password']))
 	{
 		include('../php/connect.php');
@@ -12,7 +12,9 @@
 
 
 		if(mysqli_num_rows($query)==1)
-			{echo "You have successfuly logged in.";
+		{	
+			session_start();
+			echo "You have successfuly logged in.";
 			$_SESSION['u_id']=$result['trainuserprof_id'];
 			$_SESSION['u_fname']=$result['trainuserprof_fname'];
 			$_SESSION['u_lname']=$result['trainuserprof_lname'];
