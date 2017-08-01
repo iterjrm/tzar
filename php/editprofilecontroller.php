@@ -3,9 +3,9 @@ require("connect.php");
 
 $editid=$_SESSION['u_id'];
 
-	if( !empty($_POST['password']) && !empty($_POST['fname']) && !empty($_POST['lname']) && (!empty($_POST['fn']) || !empty($_POST['mn'])) && !empty($_POST['gender']) && !empty($_POST['dob']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['address']) && !empty($_POST['pin']) && !empty($_POST['identity']) && !empty($_POST['occupation']) && !empty($_POST['qualification']) && !empty($_POST['specialization']) )
+	if(  !empty($_POST['fname']) && !empty($_POST['lname']) && (!empty($_POST['fn']) || !empty($_POST['mn'])) && !empty($_POST['gender']) && !empty($_POST['dob']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['address']) && !empty($_POST['pin']) && !empty($_POST['identity']) && !empty($_POST['occupation']) && !empty($_POST['qualification']) && !empty($_POST['specialization']) )
 	{
-		$password = mysqli_real_escape_string($conn,$_POST['password']);
+		
 		$fname = mysqli_real_escape_string($conn, $_POST['fname']);
 		$mname = mysqli_real_escape_string($conn, $_POST['mname']);
 		$lname = mysqli_real_escape_string($conn, $_POST['lname']);
@@ -23,7 +23,7 @@ $editid=$_SESSION['u_id'];
 		$qualification= mysqli_real_escape_string($conn, $_POST['qualification']);
 		$specialization= mysqli_real_escape_string($conn, $_POST['specialization']);
 
-		$query = "UPDATE trainuserprof SET password='$password',fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',email='$email',contact='$contact',altcontact='$altcontact',address='$address',pin='$pin',identity='$identity',occupation='$occupation',qualification='$qualification',specialization='specialization' WHERE ID=$editid";
+		$query = "UPDATE trainuserprof SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',email='$email',contact='$contact',altcontact='$altcontact',address='$address',pin='$pin',identity='$identity',occupation='$occupation',qualification='$qualification',specialization='specialization' WHERE ID=$editid";
 		if($conn->query($query))
 		{
 			echo "User Data Updated Succesfully";
@@ -87,10 +87,6 @@ $editid=$_SESSION['u_id'];
 		if(empty($_POST['specialization']))
 		{
 			echo "Specialization Cannot Be Empty<br>";
-		}
-		if(empty($_POST['password']))
-		{
-			echo "Password Cannot Be Empty<br>";
 		}
 		exit;	
 	}
