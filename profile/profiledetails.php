@@ -99,6 +99,7 @@ include("header.php");
 
                   <div class="row">
                                     <div class="input-field col s12">
+                                      <i class="material-icons prefix">home</i>
                                       <textarea id="address" class="materialize-textarea"></textarea>
                                       <label for="address">Address</label>
                                     </div>
