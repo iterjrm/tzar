@@ -90,7 +90,7 @@ include("header.php");
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="dob" type="text" class="datepicker">
+                                    <input id="dob" type="date" class="datepicker">
                                     <label for="dob">Date Of Birth</label>
                                   </div>
                   </div>
