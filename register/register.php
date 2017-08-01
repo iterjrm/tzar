@@ -15,7 +15,6 @@
         <h1>REGISTRATION</h1>
         <form method="post" action="../php/registercontroller.php">
           <input type="text" name="fname" placeholder="First Name" required="required"/>
-          <input type="text" name="lname" placeholder="Last Name" required="required"/>
           <input type="text" name="email" placeholder="Email Id" required="required"/>
           <input type="password" name="password" placeholder="Password" required="required"/>
           <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
