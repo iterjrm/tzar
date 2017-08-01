@@ -6,7 +6,7 @@ if (isset($_SESSION['u_id'])) {
   if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
     session_unset();
-    header('Location: ../register/login.php')
+    header('Location: ../register/login.php');
     # code...
   }
   else{
