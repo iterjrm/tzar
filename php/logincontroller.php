@@ -7,20 +7,21 @@
 		
 		$email=trim(mysqli_real_escape_string($conn,$_POST['email']));
 		$password=trim(mysqli_real_escape_string($conn,md5($_POST['password'])));
-		$query=mysqli_query($conn,"SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
-		$result = mysqli_fetch_assoc($query);
+		$query=$conn->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
+		$result = $query->num_rows;
 
 		echo $password;
 		echo $email;
 		echo $result['email'];
 		echo $result['password'];
+
 		echo mysqli_num_rows($result);
 
 
 
 
 
-		if(mysqli_num_rows($result)==1)
+		if($result==1)
 		{	
 			session_start();
 			$_SESSION['u_id']=$result['id'];

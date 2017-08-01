@@ -30,8 +30,6 @@ include("header.php");
                       
                 <h2>Profile Details</h2>
                   <div class="row" id="jrm">
-                            <form class="col s12" >
-                              <div class="row">
                                   <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
                                     <input id="fname" type="text" class="validate">
@@ -47,8 +45,6 @@ include("header.php");
                                     <input id="lname" type="text" class="validate">
                                     <label for="lname">Last Name</label>
                                   </div>
-                              </div>
-                            </form>
                   </div>
 
                   <br>
@@ -94,7 +90,7 @@ include("header.php");
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="dob" type="text" class="validate">
+                                    <input id="dob" type="date" >
                                     <label for="dob">Date Of Birth</label>
                                   </div>
                   </div>
@@ -102,14 +98,12 @@ include("header.php");
                   <br>
 
                   <div class="row">
-                                <form class="col s12">
-                                  <div class="row">
                                     <div class="input-field col s12">
-                                      <textarea id="adress" class="materialize-textarea"></textarea>
-                                      <label for="adress">Adress</label>
+                                      <i class="material-icons prefix">home</i>
+                                      <textarea id="address" class="materialize-textarea"></textarea>
+                                      <label for="address">Address</label>
                                     </div>
-                                  </div>
-                                </form>
+ 
                   </div>
 
               </form>
@@ -128,7 +122,17 @@ include("header.php");
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+  <!-- /.content-wrapper -->]
+  <script type="text/javascript">
+    $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+  </script>
 
   <?php
 
