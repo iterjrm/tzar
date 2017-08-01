@@ -14,8 +14,6 @@
 		if($result==1)
 		{	
 			session_start();
-			$var=session_status();
-			echo $var;
 			$_SESSION['u_id']=$data['id'];
 			$_SESSION['u_fname']=$data['fname'];
 			$_SESSION['u_lname']=$data['lname'];
@@ -32,13 +30,8 @@
 			$_SESSION['u_occupation']=$data['occupation'];
 			$_SESSION['u_qualification']=$data['qualification'];
 			$_SESSION['u_specialization']=$data['specialization'];
-			$_SESSION['timestamp']=time();
-			echo "string";
-			echo $_SESSION['u_id'];
-			
-			
-
-			#header('Location: ../profile/index');	
+			$_SESSION['timestamp']=time();		
+			header('Location: ../profile/index');	
 		}
 
 		else

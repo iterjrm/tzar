@@ -1,21 +1,17 @@
 <?php
 session_start();
-echo "here1";
-echo $_SESSION['u_id'];
 
-if (isset($_SESSION['u_id'])) {
-  # code...
-  echo "here2";
+if (isset($_SESSION['u_fname'])) {
+  # code...  
   $idletime=10;
   if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
     session_unset();
-    header('Location: ../register/timeout.php');
+    header('Location: ../register/login');
     # code...
   }
   else{
-    echo "here3";
-    header('Location: ../register/stillin.php');
+    $_SESSION['timestamp']=time();
   }
 }
 
