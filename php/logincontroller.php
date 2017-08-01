@@ -10,17 +10,7 @@
 		$query=$conn->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = $query->num_rows;
 
-		echo $password;
-		echo $email;
-		echo $result['email'];
-		echo $result['password'];
-
-		echo mysqli_num_rows($result);
-
-
-
-
-
+		
 		if($result==1)
 		{	
 			session_start();

@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+echo "here1";
 echo $_SESSION['u_id'];
 
 if (isset($_SESSION['u_id'])) {
@@ -9,12 +10,12 @@ if (isset($_SESSION['u_id'])) {
   if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
     session_unset();
-    header('Location: ../register/login.php');
+    header('Location: ../register/timeout.php');
     # code...
   }
   else{
     echo "here3";
-    header('Location: ../register/register.php');
+    header('Location: ../register/stillin.php');
   }
 }
 
