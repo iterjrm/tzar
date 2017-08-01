@@ -9,6 +9,9 @@ if (isset($_SESSION['u_id'])) {
     echo "<script>alert('destroyed');</script>";
     # code...
   }
+  else{
+    echo "<script>alert('started');</script>";
+  }
 }
 
 
