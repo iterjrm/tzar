@@ -33,10 +33,8 @@
 			$_SESSION['timestamp']=time();
 			echo "string";
 			echo $_SESSION['u_id'];
-			echo $data[0];
-			echo $data[1];
-			echo $data[2];
-			echo $data[3];
+			echo $query['id'];
+			
 
 			#header('Location: ../profile/index');	
 		}
