@@ -27,27 +27,16 @@ include("header.php");
                       
                 <h2>Profile Details</h2>
                   <div class="row">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s4">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input id="icon_prefix" type="text" class="validate">
-                          <label for="icon_prefix">First Name</label>
-                        </div>
-
-                        <div class="input-field col s4">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input id="icon_prefix" type="text" class="validate">
-                          <label for="icon_prefix">Middle Name</label>
-                        </div>
-
-                        <div class="input-field col s4">
-                          <i class="material-icons prefix">account_circle</i>
-                          <input id="icon_prefix" type="text" class="validate">
-                          <label for="icon_prefix">Last Name</label>
-                        </div>
-                      </div>
-                    </form>
+                          <form class="col s12">
+                            <div class="row">
+                              <div class="input-field col s6">
+                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                              </div>
+                              <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                              </div>
                   </div>
 
                   <br>
