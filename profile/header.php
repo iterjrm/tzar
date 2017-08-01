@@ -3,7 +3,7 @@
 if (isset($_SESSION['u_id'])) {
   # code...
   $idletime=10;
-  if (time()-$_SESSION['timestamp']>$idletime) {
+  if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
     session_unset();
     echo "<script>alert('destroyed');</script>";
