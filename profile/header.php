@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-echo "here";
+
 
 if (isset($_SESSION['u_id'])) {
   # code...
