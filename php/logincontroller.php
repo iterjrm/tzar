@@ -11,7 +11,7 @@
 		$result = mysqli_fetch_assoc($query);
 
 
-		if(mysqli_num_rows($query)==1)
+		if(mysqli_num_rows($result)==1)
 		{	
 			session_start();
 			echo "You have successfuly logged in.";
