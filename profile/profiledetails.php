@@ -2,6 +2,21 @@
 
 
 include("header.php");
+
+$editid=1;
+//$_SESSION['u_id'];
+
+
+
+
+
+   require("../php/connect.php");
+
+                                        $query = "SELECT * FROM trainuserprof WHERE id=$editid"; 
+
+                                          $result=$conn->query($query);
+                                              
+                                        $row=$result->fetch_array();
 ?>
 
 
@@ -32,17 +47,17 @@ include("header.php");
                   <div class="row" id="jrm">
                                   <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="fname" type="text" class="validate">
+                                    <input id="fname" type="text" value="<?php echo $row['fname']?>" class="validate">
                                     <label for="fname">First Name</label>
                                   </div>
 
                                   <div class="input-field col s4">
-                                    <input id="mname" type="text" class="validate">
+                                    <input id="mname" type="text" class="validate" value="<?php echo $row['mname']?>">
                                     <label for="mname">Middle Name</label>
                                   </div>
 
                                   <div class="input-field col s4">
-                                    <input id="lname" type="text" class="validate">
+                                    <input id="lname" type="text" value="<?php echo $row['lname']?> class="validate">
                                     <label for="lname">Last Name</label>
                                   </div>
                   </div>
@@ -52,14 +67,14 @@ include("header.php");
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="faname" type="text" class="validate">
-                                    <label for="faname">Father's Name</label>
+                                    <input id="fn" type="text" class="validate" value="<?php echo $row['fn']?>>
+                                    <label for="fn">Father's Name</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="mname" type="text" class="validate">
-                                    <label for="mname">Mother's Name</label>
+                                    <input id="mn" type="text" class="validate" value="<?php echo $row['mn']?>>
+                                    <label for="mn">Mother's Name</label>
                                   </div>
                   </div>
 
@@ -68,14 +83,14 @@ include("header.php");
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="phone" type="text" class="validate">
+                                    <input id="contact" type="text" class="validate" value="<?php echo $row['contact']?>>
                                     <label for="phone">Contact No.</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="aphone" type="text" class="validate">
-                                    <label for="aphone">Alternate Contact No.</label>
+                                    <input id="altcontact" type="text" class="validate" value="<?php echo $row['altcontact']?>>
+                                    <label for="altcontact">Alternate Contact No.</label>
                                   </div>
                   </div>
 
@@ -84,13 +99,13 @@ include("header.php");
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">email</i>
-                                    <input id="email" type="text" class="validate">
+                                    <input id="email" type="text" class="validate" value="<?php echo $row['email']?>>
                                     <label for="email">Email Id</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="dob" type="date" class="validate">
+                                    <input id="dob" type="date" class="validate" value="<?php echo $row['dob']?> >
                                     <label for="dob">Date Of Birth</label>
                                   </div>
                   </div>
@@ -100,7 +115,7 @@ include("header.php");
                   <div class="row">
                                     <div class="input-field col s12">
                                       <i class="material-icons prefix">home</i>
-                                      <textarea id="address" class="materialize-textarea"></textarea>
+                                      <textarea id="address" class="materialize-textarea" value="<?php echo $row['address']?>></textarea>
                                       <label for="address">Address</label>
                                     </div>
  
