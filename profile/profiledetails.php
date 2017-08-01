@@ -109,7 +109,8 @@ include("header.php");
                   <br>
 
                   </div class="row">
-                                    <a class="#036fd4">SUBMIT</a>
+                                    <div class="input-field col s12">
+                                    <a class="waves-effect waves-light btn">SUBMIT</a>
                   </div>
 
               </form>
