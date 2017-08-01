@@ -12,7 +12,7 @@
 
 		echo $password;
 		echo $email;
-		echo $result['id'];
+		echo $result['email'];
 
 
 
