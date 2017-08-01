@@ -53,13 +53,7 @@ if (isset($_SESSION['u_id'])) {
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
-  <style type="text/css">
-  #jrm
-  {
-    @include 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css';
-  }
-  </style>
-
+ 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>

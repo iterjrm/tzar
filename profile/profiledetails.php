@@ -4,6 +4,14 @@
 include("header.php");
 ?>
 
+
+ <style type="text/css">
+  #jrm
+ {
+    @import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css';
+ }
+  </style>
+
     <!-- Main content -->
     <section class="content">
 
