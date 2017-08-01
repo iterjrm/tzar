@@ -25,6 +25,7 @@
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 <!-- Morris.js charts -->
 <script src="../bower_components/raphael/raphael.min.js"></script>
 <script src="../bower_components/morris.js/morris.min.js"></script>
