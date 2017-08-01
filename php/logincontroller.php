@@ -32,6 +32,7 @@
 			$_SESSION['u_specialization']=$result['specialization'];
 			$_SESSION['timestamp']=time();
 			echo $_SESSION['u_id'];
+			echo $result['id'];
 			#header('Location: ../profile/index');	
 		}
 
