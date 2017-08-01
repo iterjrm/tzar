@@ -1,9 +1,11 @@
 <?php
 
 session_start();
+echo "here";
 
 if (isset($_SESSION['u_id'])) {
   # code...
+  echo "here2";
   $idletime=10;
   if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
@@ -12,7 +14,7 @@ if (isset($_SESSION['u_id'])) {
     # code...
   }
   else{
-    echo "<script>alert('started');</script>";
+    echo "here3";
     header('Location: ../register/register.php');
   }
 }
