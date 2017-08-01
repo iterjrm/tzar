@@ -57,7 +57,7 @@ $editid=1;
                                   </div>
 
                                   <div class="input-field col s4">
-                                    <input id="lname" type="text" value="<?php echo $row['lname']?> class="validate">
+                                    <input id="lname" type="text" value="<?php echo $row['lname']?>" class="validate">
                                     <label for="lname">Last Name</label>
                                   </div>
                   </div>
@@ -67,13 +67,13 @@ $editid=1;
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="fn" type="text" class="validate" value="<?php echo $row['fn']?>>
+                                    <input id="fn" type="text" class="validate" value="<?php echo $row['fn']?>">
                                     <label for="fn">Father's Name</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="mn" type="text" class="validate" value="<?php echo $row['mn']?>>
+                                    <input id="mn" type="text" class="validate" value="<?php echo $row['mn']?>">
                                     <label for="mn">Mother's Name</label>
                                   </div>
                   </div>
@@ -83,13 +83,13 @@ $editid=1;
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="contact" type="text" class="validate" value="<?php echo $row['contact']?>>
+                                    <input id="contact" type="text" class="validate" value="<?php echo $row['contact']?>">
                                     <label for="phone">Contact No.</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="altcontact" type="text" class="validate" value="<?php echo $row['altcontact']?>>
+                                    <input id="altcontact" type="text" class="validate" value="<?php echo $row['altcontact']?>">
                                     <label for="altcontact">Alternate Contact No.</label>
                                   </div>
                   </div>
@@ -99,13 +99,13 @@ $editid=1;
                   <div class="row">
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">email</i>
-                                    <input id="email" type="text" class="validate" value="<?php echo $row['email']?>>
+                                    <input id="email" type="text" class="validate" value="<?php echo $row['email']?>">
                                     <label for="email">Email Id</label>
                                   </div>
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="dob" type="date" class="validate" value="<?php echo $row['dob']?> >
+                                    <input id="dob" type="date" class="validate" value="<?php echo $row['dob']?>" >
                                     <label for="dob">Date Of Birth</label>
                                   </div>
                   </div>
@@ -115,7 +115,7 @@ $editid=1;
                   <div class="row">
                                     <div class="input-field col s12">
                                       <i class="material-icons prefix">home</i>
-                                      <textarea id="address" class="materialize-textarea" value="<?php echo $row['address']?>></textarea>
+                                      <textarea id="address" class="materialize-textarea" value="<?php echo $row['address']?>"></textarea>
                                       <label for="address">Address</label>
                                     </div>
  
