@@ -1,14 +1,14 @@
 <?php
 
 	session_start()
-	if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['submit']))
+	if(isset($_POST['email']) && isset($_POST['password']))
 	{
 		include('../php/connect.php');
 		
 		$email=trim(mysqli_real_escape_string($conn,$_POST['email']));
 		$password=trim(mysqli_real_escape_string($conn,md5($_POST['password'])));
 		$query=mysqli_query($conn,"SELECT email,password FROM register_user WHERE email='$email' AND password='$password' ");
-		$result = mysqli_num_assoc($query);
+		$result = mysqli_fetch_assoc($query);
 
 
 		if(mysqli_num_rows($query)==1)
@@ -30,7 +30,7 @@
 			$_SESSION['u_qualification']=$result['trainuserprof_qualification'];
 			$_SESSION['u_specialization']=$result['trainuserprof_specialization'];
 			$_SESSION['timestamp']=time();
-			header('Location: ../register/index.php');
+			header('Location: ../register/index.php');	
 
 		else
 		{
