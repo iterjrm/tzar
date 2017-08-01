@@ -7,7 +7,7 @@
 		
 		$email=trim(mysqli_real_escape_string($conn,$_POST['email']));
 		$password=trim(mysqli_real_escape_string($conn,md5($_POST['password'])));
-		$query=$connect->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
+		$query=$conn->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = $query->num_rows;
 
 		echo $password;
