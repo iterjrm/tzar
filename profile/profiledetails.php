@@ -90,7 +90,7 @@ include("header.php");
 
                                   <div class="input-field col s6">
                                     <i class="material-icons prefix">date_range</i>
-                                    <input id="dob" type="date" >
+                                    <input id="dob" type="date" class="validate">
                                     <label for="dob">Date Of Birth</label>
                                   </div>
                   </div>
@@ -109,7 +109,7 @@ include("header.php");
                   <br>
 
                   </div class="row">
-                                    
+
                                     <a class="waves-effect waves-light btn">SUBMIT</a>
                   </div>
 
@@ -130,16 +130,7 @@ include("header.php");
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->]
-  <script type="text/javascript">
-    $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false // Close upon selecting a date,
-  });
-  </script>
+  
 
   <?php
 
