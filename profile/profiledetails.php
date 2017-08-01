@@ -27,6 +27,8 @@ include("header.php");
                       
                 <h2>Profile Details</h2>
                   <div class="row">
+                    <form class="col s12">
+                      <div class="row">
                         <div class="input-field col s6">
                           <i class="material-icons prefix">account_circle</i>
                           <input id="icon_prefix" type="text" class="validate">
@@ -44,6 +46,8 @@ include("header.php");
                           <input id="icon_prefix" type="text" class="validate">
                           <label for="icon_prefix">Last Name</label>
                         </div>
+                      </div>
+                    </form>
                   </div>
 
                   <br>
