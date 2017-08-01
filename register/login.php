@@ -14,7 +14,7 @@
       <div class="registration">
         <h1>LOGIN</h1>
         
-        <form method="post" action="../php/logincontroller.php">
+        <form method="post" action="../php/logincontroller2.php">
           <input type="text" name="email" placeholder="Email Id" required="required"/>
           <input type="password" name="password" placeholder="Password" required="required"/>
           <br>
