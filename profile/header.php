@@ -1,3 +1,5 @@
+
+<head>
 <?php  
 
 $idletime=10;
@@ -15,7 +17,6 @@ else
 
 
 ?>
-<head>
   <meta charset="utf-8"><!DOCTYPE html>
   <style>
   body { overflow:hidden; }
