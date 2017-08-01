@@ -1,4 +1,18 @@
+<?php
 
+if (isset($_SESSION['u_id'])) {
+  # code...
+  $idletime=10;
+  if (time()-$_SESSION['timestamp']>$idletime) {
+    session_destroy();
+    session_unset();
+    echo "<script>alert('destroyed');</script>";
+    # code...
+  }
+}
+
+
+?>
 
   <meta charset="utf-8"><!DOCTYPE html>
   <style>
@@ -301,9 +315,7 @@
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          
         </ul>
       </div>
     </nav>
