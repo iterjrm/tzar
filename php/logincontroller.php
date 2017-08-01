@@ -10,30 +10,30 @@
 		$query=$conn->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = $query->num_rows;
 
-		
+		$data = $query->fetch_array();
 		if($result==1)
 		{	
 			session_start();
-			$_SESSION['u_id']=$result['id'];
-			$_SESSION['u_fname']=$result['fname'];
-			$_SESSION['u_lname']=$result['lname'];
-			$_SESSION['u_fn']=$result['fn'];
-			$_SESSION['u_mn']=$result['mn'];
-			$_SESSION['u_gender']=$result['gender'];
-			$_SESSION['u_dob']=$result['dob'];
-			$_SESSION['u_email']=$result['email'];
-			$_SESSION['u_contact']=$result['contact'];
-			$_SESSION['u_altcontact']=$result['altcontact'];
-			$_SESSION['u_address']=$result['address'];
-			$_SESSION['u_pin']=$result['pin'];
-			$_SESSION['u_id']=$result['identity'];
-			$_SESSION['u_occupation']=$result['occupation'];
-			$_SESSION['u_qualification']=$result['qualification'];
-			$_SESSION['u_specialization']=$result['specialization'];
+			$_SESSION['u_id']=$data['id'];
+			$_SESSION['u_fname']=$data['fname'];
+			$_SESSION['u_lname']=$data['lname'];
+			$_SESSION['u_fn']=$data['fn'];
+			$_SESSION['u_mn']=$data['mn'];
+			$_SESSION['u_gender']=$data['gender'];
+			$_SESSION['u_dob']=$data['dob'];
+			$_SESSION['u_email']=$data['email'];
+			$_SESSION['u_contact']=$data['contact'];
+			$_SESSION['u_altcontact']=$data['altcontact'];
+			$_SESSION['u_address']=$data['address'];
+			$_SESSION['u_pin']=$data['pin'];
+			$_SESSION['u_id']=$data['identity'];
+			$_SESSION['u_occupation']=$data['occupation'];
+			$_SESSION['u_qualification']=$data['qualification'];
+			$_SESSION['u_specialization']=$data['specialization'];
 			$_SESSION['timestamp']=time();
 			echo "string";
 			echo $_SESSION['u_id'];
-			echo $result['id'];
+			echo $data['id'];
 			#header('Location: ../profile/index');	
 		}
 
