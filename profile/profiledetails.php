@@ -39,13 +39,11 @@ include("header.php");
                                   </div>
 
                                   <div class="input-field col s4">
-                                    <i class="material-icons prefix">account_circle</i>
                                     <input id="mname" type="text" class="validate">
                                     <label for="mname">Middle Name</label>
                                   </div>
 
                                   <div class="input-field col s4">
-                                    <i class="material-icons prefix">account_circle</i>
                                     <input id="lname" type="text" class="validate">
                                     <label for="lname">Last Name</label>
                                   </div>
@@ -72,17 +70,17 @@ include("header.php");
                   <br>
 
                   <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="phone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Contact No.</span></label>
+                      <div class="input-field col s6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="phone" type="text" class="validate">
+                                    <label for="phone">Contact No.</label>
+                                  </div>
 
-                              <input type="text" name="phone" id="phone" class="form-control" required="true" placeholder="Contact No.">      
-                      </div>
-
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="aphone" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Alternate Contact No.</span></label>
-
-                              <input type="text" name="aphone" id="aphone" class="form-control" required="true" placeholder="Alternate Contact No.">      
-                      </div>
+                                  <div class="input-field col s6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="aphone" type="text" class="validate">
+                                    <label for="aphone">Alternate Contact No.</label>
+                                  </div>
                   </div>
 
                   <br>
