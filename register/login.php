@@ -9,14 +9,14 @@
         } 
         if ( ( isset ( $_POST [ 'email' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'email' ] )) ) {
             $email =  $_POST [ 'email' ];
-            $password = $_POST [ 'password' ] ;
+            $password = md5($_POST [ 'password' ]) ;
            
             if ( !( empty ( $email ) ) && !( empty ( $password ) )   ) {
                 $checkuserlogin = $conn -> prepare ( 'SELECT * FROM trainuserprof WHERE email = ? ;' ) ;
                 $checkuserlogin -> execute ( array ( $email) ) ;
                 $loginarray = $checkuserlogin -> fetch ( ) ;
                     if ( $password == $loginarray [ 'password' ] ) {
-                        if ( ( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) && ( $_SESSION [ 'fname' ] = $loginarray [ 'fname' ] ) && ( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) ) {
+                        if ( ( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) && ($password = $loginarray [ 'password' ])) {
                             $login_message = "Logging You in..." ;
                             
                             header ( "Location: ../profile/index" ) ;
@@ -28,7 +28,7 @@
                         else $login_message = "Couldn't log You in" ;
                     }
 
-                    elseif (( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) && $password != $loginarray [ 'password' ]) {
+                    elseif (( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) && ($password != $loginarray [ 'password' ]) {
                       $login_message = "Invalid Password" ;
                       # code...
                     }
@@ -78,7 +78,7 @@
           <br>
           <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
 
-            
+
    <?php
                 if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
             ?>
