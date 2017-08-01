@@ -1,21 +1,5 @@
 
-<?php  
 
-$idletime=10;
-if (time()-$_SESSION['timestamp']>$idletime)
-{
-  session_unset();
-  session_destroy();  
-  echo "logged out";
-  header("Location: ../register/login")
-}
-else
-{
-  $_SESSION['timestamp']=time();
-}
-
-
-?>
   <meta charset="utf-8"><!DOCTYPE html>
   <style>
   body { overflow:hidden; }
