@@ -32,7 +32,7 @@
 			$_SESSION['u_qualification']=$result['trainuserprof_qualification'];
 			$_SESSION['u_specialization']=$result['trainuserprof_specialization'];
 			$_SESSION['timestamp']=time();
-			header('Location: ../profile/index.php');	
+			header('Location: ../profile/index');	
 		}
 
 		else
