@@ -13,6 +13,8 @@
 		echo $password;
 		echo $email;
 		echo $result['email'];
+		echo $result['password'];
+
 
 
 
