@@ -70,7 +70,7 @@ include("header.php");
                   <br>
 
                   <div class="row">
-                      <div class="input-field col s6">
+                                  <div class="input-field col s6">
                                     <i class="material-icons prefix">phone</i>
                                     <input id="phone" type="text" class="validate">
                                     <label for="phone">Contact No.</label>
@@ -86,26 +86,30 @@ include("header.php");
                   <br>
 
                   <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="eid" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Email Id</span></label>
+                                  <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="text" class="validate">
+                                    <label for="email">Email Id</label>
+                                  </div>
 
-                              <input type="text" name="eid" id="eid" class="form-control" required="true" placeholder="Email Id">      
-                      </div>
-
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="dob" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Date Of Birth</span></label>
-
-                              <input type="text" name="dob" id="dob" class="form-control" required="true" placeholder="Date Of Birth">      
-                      </div>
+                                  <div class="input-field col s6">
+                                    <i class="material-icons prefix">date range</i>
+                                    <input id="dob" type="text" class="validate">
+                                    <label for="dob">Date Of Birth</label>
+                                  </div>
                   </div>
 
                   <br>
 
                   <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                              <label for="pa" class="col-md-1 col-sm-1 col-xs-1 control-label multiline"><span class="label label-info">Address</span></label>
-                              <textarea class="pa form-control" placeholder="Address" rows="5" name="address"></textarea>
-                        </div>
+                                <form class="col s12">
+                                  <div class="row">
+                                    <div class="input-field col s12">
+                                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                      <label for="textarea1">Textarea</label>
+                                    </div>
+                                  </div>
+                                </form>
                   </div>
 
               </form>
