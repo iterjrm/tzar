@@ -9,7 +9,6 @@ include("header.php");
   #jrm
  {
     @include 'materialize.min.css';
- }
   </style>
 
     <!-- Main content -->
