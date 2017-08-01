@@ -30,6 +30,7 @@
 			$_SESSION['u_qualification']=$result['trainuserprof_qualification'];
 			$_SESSION['u_specialization']=$result['trainuserprof_specialization'];
 			$_SESSION['timestamp']=time();
+			echo "<script> alert('in')</script>";
 			header('Location: ../register/index.php');	
 		}
 
