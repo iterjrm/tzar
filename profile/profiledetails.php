@@ -29,8 +29,7 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row" id="jrm">
-                            <form class="col s12" >
+                  
                               <div class="row">
                                   <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
@@ -50,7 +49,7 @@ include("header.php");
                                     <label for="lname">Last Name</label>
                                   </div>
                               </div>
-                            </form>
+                            
                   </div>
 
                   <br>
