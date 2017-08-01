@@ -30,8 +30,6 @@ include("header.php");
                       
                 <h2>Profile Details</h2>
                   <div class="row" id="jrm">
-                            <form class="col s12" >
-                              <div class="row">
                                   <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
                                     <input id="fname" type="text" class="validate">
@@ -47,8 +45,6 @@ include("header.php");
                                     <input id="lname" type="text" class="validate">
                                     <label for="lname">Last Name</label>
                                   </div>
-                              </div>
-                            </form>
                   </div>
 
                   <br>
@@ -102,14 +98,11 @@ include("header.php");
                   <br>
 
                   <div class="row">
-                                <form class="col s12">
-                                  <div class="row">
                                     <div class="input-field col s12">
-                                      <textarea id="adress" class="materialize-textarea"></textarea>
-                                      <label for="adress">Adress</label>
+                                      <textarea id="address" class="materialize-textarea"></textarea>
+                                      <label for="address">Address</label>
                                     </div>
-                                  </div>
-                                </form>
+ 
                   </div>
 
               </form>
