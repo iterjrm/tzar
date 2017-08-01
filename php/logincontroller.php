@@ -1,6 +1,6 @@
 <?php
 
-	session_start()
+	session_start();
 	if(isset($_POST['email']) && isset($_POST['password']))
 	{
 		include('../php/connect.php');
