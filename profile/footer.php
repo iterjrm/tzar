@@ -54,9 +54,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../dist/js/demo.js"></script>
 
-<script src="https://cdn.jsdelivr.net/jquery.pickadate.js/4.0.0-0/ui-pickadate.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.pickadate.js/4.0.0-0/shadow.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.pickadate.js/4.0.0-0/ui-picker.min.js"></script>
 
 </body>
 </html>
