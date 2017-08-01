@@ -29,8 +29,7 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row" id="jrm">
-                            <form class="col s12" >
+                  
                               <div class="row">
                                   <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
@@ -50,23 +49,23 @@ include("header.php");
                                     <label for="lname">Last Name</label>
                                   </div>
                               </div>
-                            </form>
+                            
                   </div>
 
                   <br>
 
                   <div class="row">
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="faname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Father's Name</span></label>
+                                  <div class="input-field col s4">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="faname" type="text" class="validate">
+                                    <label for="faname">Father's Name</label>
+                                  </div>
 
-                              <input type="text" name="faname" id="faname" class="form-control" required="true" placeholder="Father's Name">      
-                      </div>
-
-                      <div class="col-md-6 col-sm-6 col-xs-12 "  >
-                              <label for="mname" class="col-md-1 col-sm-1 col-xs-1"><span class="label label-info">Mother's Name</span></label>
-
-                              <input type="text" name="mname" id="mname" class="form-control" required="true" placeholder="Mother's Name">      
-                      </div>
+                                  <div class="input-field col s4">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="mname" type="text" class="validate">
+                                    <label for="mname">Mother's Name</label>
+                                  </div>
                   </div>
 
                   <br>
