@@ -37,6 +37,8 @@ include("header.php");
                                 <input id="last_name" type="text" class="validate">
                                 <label for="last_name">Last Name</label>
                               </div>
+                            </div>
+                          </form>
                   </div>
 
                   <br>
