@@ -30,6 +30,8 @@ include("header.php");
                           <form class="col s12">
                             <div class="row">
                               <div class="input-field col s4">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
                                 <input id="fname" type="text" class="validate">
                                 <label for="fname">First Name</label>
                               </div>
