@@ -26,7 +26,7 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row">
+                  <div class="row" id="jrm">
                   <div>
                   
                           <form class="col s12" >
