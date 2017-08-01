@@ -12,7 +12,7 @@
 
 
 		if(mysqli_num_rows($query)==1)
-			{echo "You have successfuly logged in.";}
+			{echo "You have successfuly logged in.";
 			$_SESSION['u_id']=$result['trainuserprof_id'];
 			$_SESSION['u_fname']=$result['trainuserprof_fname'];
 			$_SESSION['u_lname']=$result['trainuserprof_lname'];
@@ -31,6 +31,7 @@
 			$_SESSION['u_specialization']=$result['trainuserprof_specialization'];
 			$_SESSION['timestamp']=time();
 			header('Location: ../register/index.php');	
+		}
 
 		else
 		{
