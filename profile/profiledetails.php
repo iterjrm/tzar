@@ -31,7 +31,6 @@ include("header.php");
                             <div class="row">
                               <div class="input-field col s4">
                                 <i class="material-icons prefix">account_circle</i>
-                                <input id="fname" type="text" class="validate">
                                 <label for="fname">First Name</label>
                               </div>
 
