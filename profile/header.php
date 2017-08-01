@@ -62,7 +62,7 @@ if (isset($_SESSION['u_id'])) {
   <![endif]-->
 <!-- Compiled and minified CSS -->
   
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 
   <!-- Google Font -->
   <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">

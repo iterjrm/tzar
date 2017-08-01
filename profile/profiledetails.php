@@ -5,11 +5,7 @@ include("header.php");
 ?>
 
 
- <style type="text/css">
-  #jrm
- {
-    @include 'materialize.min.css';
-  </style>
+
 
     <!-- Main content -->
     <section class="content">
