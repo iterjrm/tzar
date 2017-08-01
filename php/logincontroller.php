@@ -10,7 +10,7 @@
 		$query=$conn->query("SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = $query->num_rows;
 
-		$data = $query->fetch_array();
+		$data = mysqli_fetch_assoc($query);
 		if($result==1)
 		{	
 			session_start();
@@ -33,7 +33,7 @@
 			$_SESSION['timestamp']=time();
 			echo "string";
 			echo $_SESSION['u_id'];
-			echo $query['id'];
+			echo $data['id'];
 			
 
 			#header('Location: ../profile/index');	
