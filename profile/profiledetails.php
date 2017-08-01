@@ -29,28 +29,27 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row" id="jrm">
-                  <div>
                   
-                          <form class="col s12" >
-                            <div class="row">
-                              <div class="input-field col s4">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input id="fname" type="text" class="validate">
-                                <label for="fname">First Name</label>
-                              </div>
+                              <div class="row">
+                                  <div class="input-field col s4">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="fname" type="text" class="validate">
+                                    <label for="fname">First Name</label>
+                                  </div>
 
-                              <div class="input-field col s4">
-                                <input id="mname" type="text" class="validate">
-                                <label for="mname">Middle Name</label>
-                              </div>
+                                  <div class="input-field col s4">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="mname" type="text" class="validate">
+                                    <label for="mname">Middle Name</label>
+                                  </div>
 
-                              <div class="input-field col s4">
-                                <input id="lname" type="text" class="validate">
-                                <label for="lname">Last Name</label>
+                                  <div class="input-field col s4">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="lname" type="text" class="validate">
+                                    <label for="lname">Last Name</label>
+                                  </div>
                               </div>
-                            </div>
-                          </form>
+                            </form>
                   </div>
 
                   <br>
