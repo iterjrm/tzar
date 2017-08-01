@@ -31,7 +31,8 @@
 			$_SESSION['u_qualification']=$result['qualification'];
 			$_SESSION['u_specialization']=$result['specialization'];
 			$_SESSION['timestamp']=time();
-			header('Location: ../profile/index');	
+			echo $_SESSION['u_id'];
+			#header('Location: ../profile/index');	
 		}
 
 		else
