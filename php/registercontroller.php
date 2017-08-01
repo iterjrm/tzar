@@ -10,6 +10,10 @@
 		{
 				echo "here2";
 		}
+		else
+		{
+			echo mysqli_error($conn);
+		}
 		
 	}
 	else{
