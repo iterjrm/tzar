@@ -29,13 +29,19 @@ include("header.php");
                   <div class="row">
                           <form class="col s12">
                             <div class="row">
-                              <div class="input-field col s6">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
+                              <div class="input-field col s4">
+                                <input id="fname" type="text" class="validate">
+                                <label for="fname">First Name</label>
                               </div>
-                              <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
+
+                              <div class="input-field col s4">
+                                <input id="mname" type="text" class="validate">
+                                <label for="mname">Middle Name</label>
+                              </div>
+
+                              <div class="input-field col s4">
+                                <input id="lname" type="text" class="validate">
+                                <label for="lname">Last Name</label>
                               </div>
                             </div>
                           </form>
