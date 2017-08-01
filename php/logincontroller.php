@@ -10,11 +10,12 @@
 		$query=mysqli_query($conn,"SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = mysqli_fetch_assoc($query);
 
+		echo $password;
+
 
 		if(mysqli_num_rows($result)==1)
 		{	
 			session_start();
-			echo "You have successfuly logged in.";
 			$_SESSION['u_id']=$result['id'];
 			$_SESSION['u_fname']=$result['fname'];
 			$_SESSION['u_lname']=$result['lname'];
