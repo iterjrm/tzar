@@ -8,12 +8,12 @@
             header('Location: profile/index.php');  
         } 
         if ( ( isset ( $_POST [ 'email' ] )) && ( isset ( $_POST [ 'password' ] )) && !( isset ( $_SESSION [ 'email' ] )) ) {
-            $email = strtoupper($_POST [ 'email' ]) ;
-            $password = $_POST [ 'password' ] ;
+            $email = $_POST [ 'email' ] ;
+            $password = md5($_POST [ 'password' ] );
            
             if ( !( empty ( $email ) ) && !( empty ( $password ) )   ) {
-                $checkuserlogin = $conn -> prepare ( 'SELECT * FROM trainuserprof WHERE email = ? OR email=?;' ) ;
-                $checkuserlogin -> execute ( array ( $email,$email) ) ;
+                $checkuserlogin = $conn -> prepare ( 'SELECT * FROM trainuserprof WHERE email = ? ;' ) ;
+                $checkuserlogin -> execute ( array ( $email) ) ;
                 $loginarray = $checkuserlogin -> fetch ( ) ;
                     if ( $password == $loginarray [ 'password' ] ) {
                         if ( ( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) && ( $_SESSION [ 'email' ] = $loginarray [ 'email' ] ) ) {
