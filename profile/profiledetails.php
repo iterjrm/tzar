@@ -26,7 +26,8 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row" >
+                  <div class="row">
+                  <div>
                    <style scoped>
         @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css";
     </style>
@@ -108,6 +109,7 @@ include("header.php");
                   </div>
 
               </form>
+              </div>
             </div>
           </div>
         </div>
