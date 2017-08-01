@@ -10,7 +10,11 @@
 		$query=mysqli_query($conn,"SELECT email,password FROM trainuserprof WHERE email='$email' AND password='$password' ");
 		$result = mysqli_fetch_assoc($query);
 
-		echo $password;
+		echo md5($password);
+		echo $email;
+		echo $result['id'];
+		
+
 
 
 		if(mysqli_num_rows($result)==1)
