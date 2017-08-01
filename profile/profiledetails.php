@@ -26,7 +26,10 @@ include("header.php");
 
                       
                 <h2>Profile Details</h2>
-                  <div class="row" style="@include 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css'">
+                  <div class="row" >
+                   <style scoped>
+        @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css";
+    </style>
                           <form class="col s12" >
                             <div class="row">
                               <div class="input-field col s4">
