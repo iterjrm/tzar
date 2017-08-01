@@ -106,6 +106,12 @@ include("header.php");
  
                   </div>
 
+                  <br>
+
+                  </div class="row">
+                                    <a class="waves-effect waves-light btn">SUBMIT</a>
+                  </div>
+
               </form>
               </div>
             </div>
