@@ -13,6 +13,7 @@ if (isset($_SESSION['u_id'])) {
   }
   else{
     echo "<script>alert('started');</script>";
+    header('Location: ../register/register.php');
   }
 }
 
