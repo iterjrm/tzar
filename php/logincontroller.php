@@ -33,7 +33,7 @@
 			$_SESSION['timestamp']=time();
 			echo "string";
 			echo $_SESSION['u_id'];
-			echo $data['id'];
+			
 			
 
 			#header('Location: ../profile/index');	
