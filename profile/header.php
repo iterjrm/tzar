@@ -1,29 +1,18 @@
 <?php
 session_start();
-include('../php/connect.php');
-$query=$conn->query("SELECT email FROM trainuserprof WHERE email='$_SESSION['u_email']'");
-$result = $query->num_rows;
-if (isset($_SESSION['u_email']) && $result==1) 
-{
+
+if (isset($_SESSION['u_fname'])) {
   # code...  
   $idletime=10;
-  if ((time()-$_SESSION['timestamp'])>$idletime) 
-  {
+  if ((time()-$_SESSION['timestamp'])>$idletime) {
     session_destroy();
     session_unset();
     header('Location: ../register/login');
     # code...
   }
-  else
-  {
+  else{
     $_SESSION['timestamp']=time();
-    $userimg=$_SESSION['u_avatar'];
   }
-}
-else
-{
-    $_SESSION['login_error']='Some Error Occured.Please Try again!';
-    header('Location: ../register/login');
 }
 
 
