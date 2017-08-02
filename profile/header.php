@@ -1,7 +1,9 @@
 <?php
 session_start();
-
-if (isset($_SESSION['u_email'])) 
+include('../php/connect.php');
+$query=$conn->query("SELECT email FROM trainuserprof WHERE email='$email'");
+$result = $query->num_rows;
+if (isset($_SESSION['u_email']) && $result==1) 
 {
   # code...  
   $idletime=10;
