@@ -12,6 +12,7 @@ if (isset($_SESSION['u_fname'])) {
   }
   else{
     $_SESSION['timestamp']=time();
+    $userimg=$_SESSION['u_avatar'];
   }
 }
 
