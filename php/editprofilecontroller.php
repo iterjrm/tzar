@@ -1,7 +1,7 @@
 <?php 
 require("connect.php");
 
-$editid=1;
+$editid=$_SESSION['u_id'];
 
 	if(  !empty($_POST['fname']) && !empty($_POST['lname']) && (!empty($_POST['fn']) || !empty($_POST['mn'])) && !empty($_POST['gender']) && !empty($_POST['dob']) && !empty($_POST['email']) && !empty($_POST['contact']) && !empty($_POST['address']) && !empty($_POST['pin']) && !empty($_POST['identity']) && !empty($_POST['occupation']) && !empty($_POST['qualification']) && !empty($_POST['specialization']) )
 	{
