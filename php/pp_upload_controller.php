@@ -1,6 +1,6 @@
 <?php
 $target_dir = "uploads/";
-$user="admin";
+$user="jrm";
 $info = pathinfo($_FILES["fileToUpload"]["name"]);
 $ext = $info['extension']; // get the extension of the file
 $newname = $user."_pp.".$ext; 
