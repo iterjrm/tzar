@@ -14,7 +14,6 @@
 		if($result==1)
 		{	
 			session_start();
-			$_SESSION['u_id']=$data['id'];
 			$_SESSION['u_fname']=$data['fname'];
 			$_SESSION['u_lname']=$data['lname'];
 			$_SESSION['u_fn']=$data['fn'];
