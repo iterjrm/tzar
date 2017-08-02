@@ -17,16 +17,24 @@
           <input type="text" name="email" placeholder="Email Id" required="required"/>
           <input type="password" name="password" placeholder="Password" required="required"/>
           <br>
-          <button class="btn btn-primary btn-block btn-large" type="submit">Let me in.</button>
+          <button class="btn btn-primary btn-block btn-large" type="submit">Log In</button>
 
 
-   <?php
-                if ( ( isset ( $login_message ) === true ) && ( empty ( $login_message ) === false ) ) :
-            ?>
-            <strong><?php echo $login_message ; echo $loop; ?></strong>
-            <?php
-                endif ;
-            ?>
+    <?php
+            session_start();
+            if (isset($_SESSION['login_error'])) {
+              echo $_SESSION['login_error'];
+              session_unset();
+              session_destroy();
+              # code...
+            }
+            else{
+              session_unset();
+              session_destroy();
+            }
+
+   
+                ?>
         </form>
       </div>
     </div>

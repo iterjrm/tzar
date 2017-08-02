@@ -30,13 +30,16 @@
 			$_SESSION['u_occupation']=$data['occupation'];
 			$_SESSION['u_qualification']=$data['qualification'];
 			$_SESSION['u_specialization']=$data['specialization'];
-			$_SESSION['timestamp']=time();		
+			$_SESSION['timestamp']=time();
+			$_SESSION['login_error']='';		
 			header('Location: ../profile/index');	
 		}
 
 		else
 		{
-			echo "Sorry, wrong credentials";
+			session_start();
+			$_SESSION['login_error']='Either The Email Or Password is Wrong';			
+			header("location: ../register/login.php");
 			exit();
 		}
 	}
