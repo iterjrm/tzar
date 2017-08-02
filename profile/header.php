@@ -17,6 +17,7 @@ if (isset($_SESSION['u_email']) && $result==1)
   else
   {
     $_SESSION['timestamp']=time();
+    $userimg=$_SESSION['u_avatar'];
   }
 }
 else
