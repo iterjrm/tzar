@@ -1,7 +1,7 @@
 <?php
 session_start();
 include('../php/connect.php');
-$query=$conn->query("SELECT email FROM trainuserprof WHERE email='$email'");
+$query=$conn->query("SELECT email FROM trainuserprof WHERE email='$_SESSION['u_email']'");
 $result = $query->num_rows;
 if (isset($_SESSION['u_email']) && $result==1) 
 {
