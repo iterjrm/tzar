@@ -22,8 +22,9 @@ $editid=$_SESSION['u_id'];
 		$occupation= mysqli_real_escape_string($conn, $_POST['occupation']);
 		$qualification= mysqli_real_escape_string($conn, $_POST['qualification']);
 		$specialization= mysqli_real_escape_string($conn, $_POST['specialization']);
+		$avatar= mysqli_real_escape_string($conn, $_POST['avatar']);
 
-		$query = "UPDATE trainuserprof SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',email='$email',contact='$contact',altcontact='$altcontact',address='$address',pin='$pin',identity='$identity',occupation='$occupation',qualification='$qualification',specialization='specialization' WHERE ID=$editid";
+		$query = "UPDATE trainuserprof SET fname='$fname',mname='$mname',lname='$lname',fn='$fn',mn='$mn',gender='$gender',dob='$dob',email='$email',contact='$contact',altcontact='$altcontact',address='$address',pin='$pin',identity='$identity',occupation='$occupation',qualification='$qualification',specialization='$specialization',avatar='$avatar' WHERE ID=$editid";
 		if($conn->query($query))
 		{
 			echo "User Data Updated Succesfully";
